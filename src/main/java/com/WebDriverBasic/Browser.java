@@ -2,12 +2,15 @@ package com.WebDriverBasic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 public class Browser {
+
+    public static WebDriver driver;
+
     public static void main(String[] args) {
         chrome_launch();
         firefox_launch();
-        chrome_close();
-        firefox_close();
 
     }
     public static void chrome_launch() {
@@ -20,6 +23,5 @@ public class Browser {
     }
 
 
-
-    }
 }
+
